@@ -3,7 +3,7 @@ const github_repo = typeof(GITHUB_REPO)!="undefined" ? GITHUB_REPO
     : 'oldking139/Url-Shorten-Worker'
 // 项目版本，cdn会有缓存，所以有更新时需要指定版本，
 const github_version = typeof(GITHUB_VERSION)!="undefined" ? GITHUB_VERSION
-    : '@main'
+    : '@v0.0.1-pre'
 // 密码，密码正确情况无视白名单和超时设置，且支持自定义短链接，
 const password = typeof(PASSWORD)!="undefined" ? PASSWORD
     : 'A-SOUL'
@@ -29,7 +29,7 @@ const white_list = JSON.parse(typeof(WHITE_LIST)!="undefined" ? WHITE_LIST
     ]`)
 // 演示模式开启时网页上展示这段禁止滥用提示，并不需要明确表示什么时候失效，
 const demo_notice = typeof(DEMO_NOTICE)!="undefined" ? DEMO_NOTICE
-    : `注意：为防止示例服务被人滥用，故所有由demo网站生成的链接随时可能失效，如需长期使用请自行搭建。`
+    : `注意：为防止示例服务被人滥用，故所有由网站生成的链接随时可能失效，白名单域名请向维护者申请添加后便可免除过期限制。`
 //console.log(`${github_repo}, ${github_version}, ${password}, ${shorten_timeout}, ${demo_mode}, ${white_list}, ${demo_notice}`)
 const html404 = `<!DOCTYPE html>
 <body>
