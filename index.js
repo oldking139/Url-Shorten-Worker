@@ -3,7 +3,7 @@ const github_repo = typeof(GITHUB_REPO)!="undefined" ? GITHUB_REPO
     : 'oldking139/Url-Shorten-Worker'
 // 项目版本，cdn会有缓存，所以有更新时需要指定版本，
 const github_version = typeof(GITHUB_VERSION)!="undefined" ? GITHUB_VERSION
-    : '@v0.0.1-eoe.fans'
+    : '@v0.0.1-eoe.best'
 // 密码，密码正确情况无视白名单和超时设置，且支持自定义短链接，
 const password = typeof(PASSWORD)!="undefined" ? PASSWORD
     : 'KAZAMI'
